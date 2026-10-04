@@ -1,0 +1,167 @@
+.header {
+  @apply w-full mt-5;
+
+  &__container {
+    --gutter-x: 28px;
+
+    padding-right: var(--gutter-x);
+    padding-left: var(--gutter-x);
+  }
+
+  &__row {
+    @apply flex items-center justify-between w-full;
+  }
+
+  &__col {
+    &--menu {
+      @apply flex flex-col p-2.5 bg-white;
+      width: 320px;
+      border-radius: 10px;
+
+      @media screen and (min-width: 1024px) {
+        @apply mx-4 bg-transparent p-0;
+        width: auto;
+      }
+    }
+
+    &--actions {
+      @apply flex items-center flex-col;
+
+      @media screen and (min-width: 1024px) {
+        @apply flex-row ml-auto;
+      }
+    }
+  }
+
+  &__group {
+    @apply absolute left-0 z-10 hidden items-center flex-col w-full pb-10 bg-athensGray overflow-auto;
+    top: 76px;
+    height: calc(100% - 76px);
+    border-radius: 10px;
+
+    @media screen and (min-width: 1024px) {
+      @apply static flex flex-row h-auto pb-0 bg-transparent;
+      overflow: initial;
+    }
+
+    &--active {
+      @apply flex;
+    }
+  }
+
+  &__menu {
+    @apply flex flex-col items-center;
+
+    @media screen and (min-width: 1024px) {
+      @apply flex-row;
+    }
+  }
+
+  &__button {
+    &--search {
+      @apply hidden;
+
+      @media screen and (min-width: 1024px) {
+        @apply flex;
+      }
+    }
+
+    &--access {
+      @apply hidden;
+
+      @media screen and (min-width: 1024px) {
+        @apply flex;
+      }
+    }
+
+    &--login {
+      @apply mt-4 bg-white;
+      width: 320px;
+
+      @media screen and (min-width: 1024px) {
+        @apply mt-0 bg-transparent;
+        width: auto;
+      }
+    }
+
+    &:not(:last-child) {
+      @apply mr-5;
+    }
+  }
+
+  &__dropdown {
+    @apply relative;
+
+    &-button {
+      margin: 0 auto;
+    }
+
+    &-content {
+      @apply z-2 flex flex-col py-2.5 bg-white;
+      position: relative;
+      width: 180px;
+      border-radius: 10px;
+
+      @media screen and (min-width: 1024px) {
+        @apply absolute;
+        top: 54px;
+        left: 0;
+      }
+    }
+
+    &-item {
+      @apply text-18 text-center w-full py-2 transition-colors transition-transform;
+      
+      &:active {
+        @apply opacity-70;
+        transform: scale(0.9);
+      }
+
+      @media screen and (min-width: 1024px) {
+        @apply text-left pl-6;
+
+        &:hover {
+          @apply bg-athensGray;
+        }
+
+        &:focus {
+          @apply bg-athensGray;
+        }
+
+        &:active {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    @apply block relative;
+
+    @media screen and (min-width: 1024px) {
+      @apply hidden;
+    }
+
+    &:focus {
+      @apply outline-none;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(45deg) translate(-4px, -4px);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &::after,
+    &::before {
+      @apply block bg-codGray my-1 transition-transform ease-in-out;
+      content: '';
+      width: 28px;
+      height: 2px;
+    }
+  }
+}

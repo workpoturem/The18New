@@ -1,0 +1,250 @@
+.card {
+  @apply block w-full rounded-[24px] transition-transform ease-in-out;
+  max-width: 416px;
+  height: 608px;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+  &:hover & {
+    &__image {
+      transform: scale(1.05);
+    }
+  }
+
+  &:focus {
+    @apply outline-none;
+    transform: translateY(-4px);
+  }
+
+  &:active {
+    transform: translateY(4px);
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 774px;
+  }
+
+  &--skeleton {
+    background-color: rgb(238, 238, 238);
+  }
+
+  &--skeleton & {
+    &__image {
+      background-color: rgb(223, 223, 223);
+    }
+  }
+
+  &--type-simple {
+    width: 100%;
+    max-width: 100%;
+  }
+  &--type-simple & {
+    &__image {
+      --height: 440px;
+      height: var(--height);
+
+      @media screen and (min-width: 1920px) {
+        --height: 560px;
+      }
+    }
+  }
+
+  &--type-full {
+    height: 510px;
+    max-width: 100%;
+
+    @media screen and (min-width: 1920px) {
+      height: 648px;
+    }
+  }
+  &--type-full & {
+    &__container {
+      @apply flex flex-col items-start;
+
+      @media screen and (min-width: 768px) {
+        @apply flex-row;
+      }
+    }
+
+    &__header {
+      @apply h-full border-b-0 border-r-2 rounded-l-[24px] rounded-r-[0];
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    &__image {
+      --height: 440px;
+      height: var(--height);
+
+      @media screen and (min-width: 768px) {
+        --height: auto;
+      }
+
+      &-pic {
+        @apply rounded-l-[24px];
+      }
+    }
+
+    &__body {
+      @apply pr-7;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        @apply h-full;
+        width: 50%;
+      }
+
+      @media screen and (min-width: 1920px) {
+        @apply pr-9;
+      }
+    }
+
+    &__sub {
+      @apply mb-0 pr-0;
+      
+      @media screen and (min-width: 768px) {
+        @apply mb-5;
+      }
+    }
+
+    &__title {
+      @apply text-29px leading-7 mb-2;
+      max-width: 100%;
+
+      @media screen and (min-width: 768px) {
+        @apply text-68px leading-19 mb-5;
+      }
+
+      @media screen and (min-width: 1920px) {
+        @apply text-86px;
+      }
+    }
+
+    &__description {
+      @apply text-14px mb-5 overflow-hidden;
+      line-height: 18px;
+      max-width: 100%;
+      max-height: 36px;
+
+      @media screen and (min-width: 768px) {
+        @apply text-18px leading-6 mb-5;
+        max-height: none;
+      }
+
+      @media screen and (min-width: 1920px) {
+        @apply text-22px leading-7;
+      }
+    }
+  }
+
+  &--type-half & {
+    &__description {
+      max-width: 460px;
+    }
+  }
+
+  &--type-slider {
+    max-width: 100%;
+    height: 414px;
+
+    
+    @media screen and (min-width: 1920px) {
+      height: 530px;
+    }
+  }
+  &--type-slider & {
+    &__image {
+      --height: 246px;
+
+      height: var(--height);
+
+      @media screen and (min-width: 1920px) {
+        --height: 312px;
+      }
+    }
+  }
+
+  &__container {
+    @apply w-full h-full;
+  }
+
+  &__header {
+    @apply border-b-2 border-athensGray overflow-hidden;
+    border-radius: 24px 24px 0 0;
+  }
+
+  &__image {
+    @apply w-full h-full rounded-t-[24px] transition-transform ease-in-out;
+
+    &-wrapper {
+      @apply w-full h-full;
+    }
+
+    &-pic {
+      @apply w-full h-full rounded-t-[24px];
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__body {
+    @apply pt-4 pb-5 pl-7 pr-2;
+
+    @media screen and (min-width: 1920px) {
+      @apply pt-5 pb-7 pl-9;
+    }
+  }
+
+  &__sub {
+    @apply flex items-start justify-between pr-5 mb-0.5;
+
+    @media screen and (min-width: 1920px) {
+      @apply text-18 pr-7;
+    }
+
+    &-formats {
+      @apply text-14 opacity-50;
+      line-height: normal;
+
+      @media screen and (min-width: 1920px) {
+        @apply text-18;
+      }
+    }
+
+    &-price {
+      @apply font-semibold text-21 text-codGray;
+      line-height: normal;
+
+      @media screen and (min-width: 1920px) {
+        @apply text-27;
+      }
+    }
+  }
+
+  &__title {
+    @apply mb-2;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    max-width: 70%;
+
+    @media screen and (min-width: 1920px) {
+      @apply mb-3;
+      line-height: 38px;
+    }
+  }
+
+  &__description {
+    @apply text-14 text-codGray;
+    line-height: 18px;
+    max-width: 390px;
+
+    @media screen and (min-width: 1920px) {
+      @apply text-18;
+      line-height: 22px;
+    }
+  }
+}

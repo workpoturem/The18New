@@ -1,0 +1,182 @@
+.footer {
+  @apply mt-15 pt-10 pb-7 bg-codGray text-white;
+
+  @media screen and (min-width: 768px) {
+    @apply pb-13;
+  }
+
+  @media screen and (min-width: 1024px) {
+    @apply mt-30;
+  }
+
+  &__logo {
+    @apply mb-10;
+  }
+
+  &__socials {
+    @apply flex items-center mb-10;
+
+    &-link {
+      @apply block transition-opacity;
+
+      &:hover {
+        @apply opacity-60;
+      }
+
+      &:active {
+        @apply opacity-90;
+      }
+
+      &:not(:last-child) {
+        @apply mr-2.5;
+
+        @media screen and (min-width: 1024px) {
+          @apply mr-4.5;
+        }
+      }
+    }
+
+    &-icon {
+      --size: 44px;
+      width: var(--size);
+      height: var(--size);
+
+      @media screen and (min-width: 1024px) {
+        --size: 60px;
+      }
+    }
+  }
+
+  &__subs {
+    max-width: 370px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 650px;
+    }
+
+    &-title {
+      @apply font-medium text-24 uppercase mb-7;
+    }
+
+    &-form {
+      @apply flex items-center justify-between py-5px pl-1 pr-1 border border-white bg-transparent rounded-16px;
+      height: 54px;
+
+      
+      &--error {
+        @apply border-red-600;
+      }
+    }
+
+    &-field {
+      @apply w-full h-full pr-2;
+    }
+
+    &-input {
+      @apply text-18 w-full h-full pl-4 py-11px bg-transparent rounded-16px;
+      color: #a1a1a1;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: #a1a1a1;
+      }
+    }
+
+    &-submit {
+      @apply text-16px text-center block py-3 px-3 bg-white text-codGray transition-colors;
+      flex-shrink: 0;
+      border-radius: 12px;
+
+      &:hover {
+        color: rgba(#151515, 0.5);
+      }
+
+      &:focus {
+        @apply outline-none;
+        color: rgba(#151515, 0.5);
+      }
+
+      &:active {
+        @apply opacity-90;
+      }
+    }
+  }
+
+  &__row {
+    @apply flex flex-wrap;
+
+    @media screen and (min-width: 1024px) {
+      @apply flex-nowrap;
+    }
+  }
+
+  &__col {
+    @apply mb-15 mr-auto;
+
+    &-title {
+      @apply font-medium text-24 uppercase mb-8;
+    }
+
+    &--links {
+      @apply w-full flex flex-col items-center;
+
+      @media screen and (min-width: 480px) {
+        @apply w-auto items-start;
+      }
+
+      margin-right: 0;
+
+      @media screen and (min-width: 480px) {
+        margin-right: 64px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-right: 140px;
+      }
+    }
+  }
+
+  &__group {
+    @apply flex items-start justify-start flex-wrap w-full;
+
+    @media screen and (min-width: 1024px) {
+      @apply flex-nowrap justify-end;
+    }
+  }
+
+  &__link {
+    @apply text-18 inline mb-20px border-b border-transparent opacity-70 transition-all;
+    width: fit-content;
+
+    &::last-child {
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      @apply opacity-100;
+    }
+
+    &:hover {
+      @apply opacity-100;
+    }
+
+    &:active {
+      @apply opacity-40;
+    }
+  }
+
+  &__marque {
+    @apply pt-7 border-t border-white;
+
+    @media screen and (min-width: 768px) {
+      @apply pt-10;
+    }
+
+    &-hightlight {
+      @apply font-bold pr-3;
+    }
+  }
+}

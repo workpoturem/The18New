@@ -1,0 +1,27 @@
+.order {
+  @apply w-full max-w-1032px mx-auto pt-60px pb-10 bg-white rounded-24px;
+
+  @media screen and (min-width: 700px) {
+    @apply py-60px;
+  }
+
+  &__box {
+    @apply w-full max-w-624px mx-auto px-24px;
+
+    @media screen and (min-width: 700px) {
+      @apply px-0;
+    }
+  }
+
+  &__title {
+    @apply text-50px mb-4;
+  }
+
+  &__subtitle {
+    @apply font-500 text-24px uppercase;
+  }
+
+  &__form {
+    @apply mt-10;
+  }
+}

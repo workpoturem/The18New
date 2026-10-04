@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-7" fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <polygon id="Stroke-1" fill="#000000" fill-rule="nonzero" transform="translate(7.331402, 12.355302) rotate(-90.000000) translate(-7.331402, -12.355302) " points="8.08140172 5.38030172 8.08140172 19.3303017 6.58140172 19.3303017 6.58140172 5.38030172"></polygon>
+            <path d="M24.9633761,7.30835618 L12.2433184,7.30835618 L18.6033473,17.4022473 L24.9633761,7.30835618 Z M22.2440473,8.80755618 L18.6030473,14.5875562 L14.9610473,8.80755618 L22.2440473,8.80755618 Z" id="Stroke-3" fill="#000000" fill-rule="nonzero" transform="translate(18.603347, 12.355302) rotate(-90.000000) translate(-18.603347, -12.355302) "></path>
+        </g>
+    </g>
+</svg>

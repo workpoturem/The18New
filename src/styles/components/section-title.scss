@@ -1,0 +1,20 @@
+.section-title {
+  @apply flex items-center;
+
+  &__text {
+    @apply font-light mr-2;
+    letter-spacing: -2px;
+
+    @media screen and (min-width: 1024px) {
+      @apply mr-7;
+    }
+  }
+
+  &__button {
+    @apply mr-0 ml-auto;
+
+    @media screen and (min-width: 1024px) {
+      @apply mx-0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon_html5_36x36</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon_html5_36x36" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_html5">
+            <rect id="bg" fill="#FFFFFF" opacity="0" x="0" y="0" width="32" height="32"></rect>
+            <g id="Group" transform="translate(2.000000, 0.000000)" fill-rule="nonzero">
+                <polygon id="Shape" fill="#EF5006" points="9.04853579e-16 0 2.54820987 28.8124408 13.9829355 32 25.4492432 28.8160393 28 0"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="22.6998254 6.82159783 22.5401324 8.66509229 22.469837 9.5104985 9.05639645 9.5104985 9.37654635 13.1090655 22.1509606 13.1090655 22.0653835 14.0012531 21.241959 23.2852989 21.1813419 23.8687808 14 25.8605877 14 25.8611017 13.9913404 25.8657285 6.81483772 23.9577168 6.32760879 18.506916 9.84620143 18.506916 10.0955465 21.3135412 13.9890482 22.3625235 14 22.3625235 14 22.2221794 17.9108208 21.2261474 18.3193494 16.7076325 6.1709722 16.7076325 5.30934362 6.91001976 5.22554941 5.9119315 22.7838743 5.9119315 22.6998254 6.82159783"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

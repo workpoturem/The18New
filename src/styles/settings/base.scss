@@ -1,0 +1,24 @@
+html {
+  @apply font-gilroy font-light text-base box-border bg-athensGray;
+
+  * {
+    box-sizing: inherit;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
+  }
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+figure {
+  @apply leading-0 m-0 p-0;
+}
+
+.swiper {
+  padding-top: 4px!important;
+}

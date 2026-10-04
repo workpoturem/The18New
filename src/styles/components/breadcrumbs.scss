@@ -1,0 +1,17 @@
+.breadcrumbs {
+  @apply flex items-center justify-center w-full mb-2;
+
+  &__item {
+    @apply text-12px uppercase block;
+    color: rgba(#151515, .5);
+
+    &:not(:last-child) {
+      @apply mr-1.5;
+
+      &::after {
+        @apply pl-1.5;
+        content: '/';
+      }
+    }
+  }
+}

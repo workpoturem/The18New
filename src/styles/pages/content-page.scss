@@ -1,0 +1,13 @@
+.content-page {
+  @apply mt-10;
+
+  &__title {
+    @apply mb-60px;
+  }
+
+  &__section {
+    &:not(:last-child) {
+      @apply mb-120px;
+    }
+  }
+}

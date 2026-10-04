@@ -1,0 +1,15 @@
+{
+  "name": "THE18.DESIGN - UX/UI Kits, illustrations, Wireframes, HTML",
+  "short_name": "THE18.DESIGN",
+  "icons": [{
+      "src": "google-touch-icon.png",
+      "sizes": "180x180"
+  },
+  {
+    "src": "apple-touch-icon.png",
+    "sizes": "180x180"
+  }],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "fullscreen"
+}

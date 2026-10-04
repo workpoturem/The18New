@@ -1,0 +1,23 @@
+.content-block {
+  @apply w-full max-w-1074px mx-auto text-black rounded-24px bg-white;
+
+  &__box {
+    @apply w-full max-w-760px pt-21px pb-26px px-4;
+
+    @screen md {
+      @apply pt-41px pb-56px px-10;
+    }
+  }
+
+  &__text {
+    @apply text-21px leading-8;
+
+    &:not(:last-child) {
+      @apply mb-10;
+    }
+   }
+
+  &__title {
+    @apply font-black text-27px leading-34px mb-17px;
+  }
+}

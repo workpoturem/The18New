@@ -1,0 +1,43 @@
+.form {
+  @apply flex flex-col w-full;
+
+  &__field {
+    &:not(:last-child) {
+      @apply mb-20px;
+    }
+  }
+
+  &__input {
+    @apply text-18px w-full py-15px px-20px rounded-16px border-none outline-transparent;
+    background-color: #f5f5f7;
+    color: #151515;
+    outline-width: 1px;
+
+    &--error {
+      @apply outline-red-400;
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+      background-color: #ebebeb;
+      color: #818181;
+    }
+
+    &:focus {
+      @apply outline-black;
+    }
+  }
+
+  &__textarea {
+    @apply leading-26px h-200px;
+    resize: none;
+  }
+
+  &__submit {
+    @apply text-22px w-full mr-0 ml-auto py-15px bg-black;
+
+    @media screen and (min-width: 700px) {
+      @apply w-196px;
+    }
+  }
+}

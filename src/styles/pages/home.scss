@@ -1,0 +1,31 @@
+.home-page {
+  @apply mt-10;
+
+  @media screen and (min-width: 1024px) {
+    @apply mt-24;
+  }
+
+  &__description {
+    @apply mt-4;
+  }
+
+  &__access {
+    @apply block mx-auto mt-7;
+
+    @media screen and (min-width: 1024px) {
+      @apply hidden;
+    }
+  }
+
+  &__section {
+    @apply mt-15;
+
+    @media screen and (min-width: 1024px) {
+      @apply mt-25;
+    }
+  }
+
+  &__carousel {
+    @apply mt-30;
+  }
+}

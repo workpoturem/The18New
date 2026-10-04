@@ -1,0 +1,18 @@
+.unlimited-success {
+  &__title {
+    @apply text-23px;
+
+    @media screen and (min-width: 600px) {
+      @apply text-44px;
+    }
+  }
+
+  &__description {
+    @apply max-w-780px mx-auto mt-4;
+  }
+  
+  &__button {
+    @apply block mx-auto mt-7;
+    width: fit-content;
+  }
+}

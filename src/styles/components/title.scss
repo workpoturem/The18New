@@ -1,0 +1,50 @@
+.title {
+  &--big {
+    @apply font-extralight text-28 leading-7 uppercase text-center text-black;
+
+    @media screen and (min-width: 1024px) {
+      @apply text-44 leading-11;
+    }
+
+    @media screen and (min-width: 1440px) {
+      @apply text-52 leading-13;
+    }
+  }
+
+  &--average-big {
+    @apply font-extralight leading-7 uppercase text-center text-black;
+    font-size: 26px;
+
+    @media screen and (min-width: 1024px) {
+      @apply text-44 leading-11;
+    }
+
+    @media screen and (min-width: 1440px) {
+      @apply text-52 leading-13;
+    }
+  }
+
+  &--medium-big {
+    @apply font-light text-28 leading-7 uppercase text-codGray;
+
+    @media screen and (min-width: 1024px) {
+      @apply text-44 leading-13;
+    }
+  }
+
+  &--medium {
+    @apply font-semibold text-29px leading-7 text-codGray;
+
+    @media screen and (min-width: 1920px) {
+      @apply text-37 leading-9;
+    }
+  }
+
+  &--small {
+    @apply font-black text-27px leading-8 text-codGray;
+  }
+
+  &--black {
+    @apply font-black;
+  }
+}

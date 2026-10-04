@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  font-display: swap;
+  src: url('~@/fonts/Gilroy-Light.woff') format('woff'),
+       url('~@/fonts/Gilroy-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-display: swap;
+  src: url('~@/fonts/Gilroy-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  font-display: swap;
+  src: url('~@/fonts/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-display: swap;
+  src: url('~@/fonts/Gilroy-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-display: swap;
+  src: url('~@/fonts/Gilroy-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RFDevi';
+  font-weight: 200;
+  font-display: swap;
+  src: url('~@/fonts/RFDewiExpanded-Ultralight.woff') format('woff'),
+       url('~@/fonts/RFDewiExpanded-Ultralight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'RFDevi';
+  font-weight: 900;
+  font-display: swap;
+  src: url('~@/fonts/RFDewiExpanded-Black.woff') format('woff'),
+       url('~@/fonts/RFDewiExpanded-Black.ttf') format('ttf');
+}

@@ -1,0 +1,7 @@
+.category-page {
+  @apply mt-10;
+
+  @media screen and (min-width: 1024px) {
+    @apply mt-24;
+  }
+}

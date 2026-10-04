@@ -1,0 +1,11 @@
+.order-page {
+  @apply mt-10;
+
+  @media screen and (min-width: 1024px) {
+    @apply mt-24;
+  }
+
+  &__description {
+    @apply mb-10
+  }
+}

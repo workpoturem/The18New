@@ -1,0 +1,9 @@
+.marque {
+  &__text {
+    @apply font-rfdevi font-light uppercase text-28 w-full;
+
+    @media screen and (min-width: 768px) {
+      @apply text-52;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.carousel {
+  --gutter-x: 16px;
+
+  & .swiper {
+ 
+    padding-right: var(--gutter-x);
+    padding-left: var(--gutter-x);
+
+    @media screen and (min-width: 1024px) {
+      --gutter-x: 28px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      --gutter-x: 80px;
+    }
+  }
+
+  &__controls {
+    @apply flex items-center mt-4;
+    padding-left: var(--gutter-x);
+
+    &-button {
+      @apply py-2 px-4 transition-colors ease-in-out rounded-12px bg-transparent;
+
+      &:hover {
+        @apply bg-white;
+      }
+
+      &:active {
+        @apply bg-gray-50;
+      }
+
+      &:first-child {
+        transform: rotate(-180deg);
+      }
+    }
+
+    &-arrow {
+      @apply w-24px h-24px;
+    }
+  }
+}
